@@ -258,4 +258,24 @@ h2 {
   display: inline-block;
   margin-left: 10px;
 }
+
+@media (max-width: 768px) {
+  .navbar-header {
+    position: relative;
+  }
+
+  .navbar-toggle {
+    position: absolute !important;
+    left: 10px !important;
+    right: auto !important;
+    top: 8px;
+    float: none !important;
+  }
+}
+
+
+
+
+
+
 }
