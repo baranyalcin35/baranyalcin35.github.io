@@ -277,6 +277,32 @@ h1 em, h2 em { color: var(--gold); font-style: italic; font-weight: 500; }
   font: 500 30px/1.1 var(--serif);
   margin: 0 0 14px;
 }
+.price-switch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 22px;
+  margin: 0 0 6px;
+}
+.price-switch button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0 0 8px;
+  cursor: pointer;
+  font: 500 30px/1.1 var(--serif);
+  letter-spacing: -0.03em;
+  color: rgba(15, 14, 12, 0.28);
+  border-bottom: 2px solid transparent;
+}
+.price-switch button.is-active {
+  color: var(--ink);
+  border-bottom-color: var(--gold-deep);
+}
+.price-switch button:hover,
+.price-switch button:focus-visible {
+  color: var(--ink);
+}
 .hours dl,
 .price-list { margin: 0; }
 .hours dl div,
