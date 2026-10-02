@@ -41,9 +41,12 @@
       <div class="price-card">
         <div class="card-heading">
           <span class="eyebrow">Cut &amp; Care</span>
-          <h2>Herren</h2>
+          <div class="price-switch" role="tablist" aria-label="Preisliste">
+            <button type="button" class="is-active" role="tab" id="tab-herren" data-price-tab="herren" aria-selected="true" aria-controls="preise-herren">Herren</button>
+            <button type="button" role="tab" id="tab-damen" data-price-tab="damen" aria-selected="false" aria-controls="preise-damen" tabindex="-1">Damen</button>
+          </div>
         </div>
-        <dl class="price-list">
+        <dl class="price-list" id="preise-herren" role="tabpanel" aria-labelledby="tab-herren">
           <div><dt>Haarschnitt</dt><dd>23 €</dd></div>
           <div><dt>Kinderhaarschnitt</dt><dd>17 €</dd></div>
           <div><dt>Schülerhaarschnitt</dt><dd>20 €</dd></div>
@@ -52,6 +55,32 @@
           <div><dt>Augenbrauen zupfen</dt><dd>7 €</dd></div>
           <div><dt>Haare waschen</dt><dd>5 €</dd></div>
           <div><dt>Heißwachs (N/O)</dt><dd>1 €</dd></div>
+        </dl>
+        <dl class="price-list" id="preise-damen" role="tabpanel" aria-labelledby="tab-damen" hidden>
+          <div><dt>D. Schnitt kurz</dt><dd>30 €</dd></div>
+          <div><dt>D. Schnitt mittel</dt><dd>35 €</dd></div>
+          <div><dt>D. Schnitt lang</dt><dd>40 €</dd></div>
+          <div><dt>D. W. S. F. kurz</dt><dd>43 €</dd></div>
+          <div><dt>D. W. S. F. mittel</dt><dd>45 €</dd></div>
+          <div><dt>D. W. S. F. lang</dt><dd>48 €</dd></div>
+          <div><dt>Ansatzfarbe bis 4 cm</dt><dd>50 €</dd></div>
+          <div><dt>Farbe neu kurz</dt><dd>55 €</dd></div>
+          <div><dt>Farbe neu lang</dt><dd>65 €</dd></div>
+          <div><dt>Intensivtönung Ansatz 4 cm</dt><dd>35 €</dd></div>
+          <div><dt>Intensivtönung kurz</dt><dd>40 €</dd></div>
+          <div><dt>Intensivtönung lang</dt><dd>50 €</dd></div>
+          <div><dt>Blondierung Ansatz</dt><dd>50 €</dd></div>
+          <div><dt>Blondierung neu kurz</dt><dd>55 €</dd></div>
+          <div><dt>Blondierung neu lang</dt><dd>60 €</dd></div>
+          <div><dt>Glossing kurz</dt><dd>15 €</dd></div>
+          <div><dt>Glossing lang</dt><dd>20 €</dd></div>
+          <div><dt>Foliensträhnen kurz</dt><dd>70 €</dd></div>
+          <div><dt>Foliensträhnen lang</dt><dd>85 €</dd></div>
+          <div><dt>Ansatzsträhnen kurz</dt><dd>55 €</dd></div>
+          <div><dt>Ansatzsträhnen lang</dt><dd>70 €</dd></div>
+          <div><dt>Highlights kurz</dt><dd>40 €</dd></div>
+          <div><dt>Highlights lang</dt><dd>50 €</dd></div>
+          <div><dt>Balayage/Ombre ab</dt><dd>85 €</dd></div>
         </dl>
         <p class="cash-note">Barzahlung oder PayPal möglich.</p>
       </div>
