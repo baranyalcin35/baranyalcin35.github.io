@@ -408,6 +408,15 @@ h1 em, h2 em { color: var(--gold); font-style: italic; font-weight: 500; }
   color: var(--ink);
 }
 
+.missing-page {
+  min-height: 52vh;
+  display: grid;
+  align-content: center;
+  gap: 16px;
+  padding: 48px 0 64px;
+}
+.missing-page h1 { font-size: clamp(34px, 10vw, 56px); }
+.missing-page p:not(.eyebrow) { margin: 0; color: var(--muted); }
 .subpage-main { padding: 16px 0 32px; }
 .page-heading { padding: 4px 0 24px; }
 .page-heading > p:last-child { color: var(--muted); margin: 12px 0 0; }
